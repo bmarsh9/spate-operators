@@ -1,26 +1,10 @@
 [
     {
-        "file_name":"operator_123456789a.py",
-        "uuid":"123456789a",
-        "label":"this is the label",
-        "description":"this is the description",
+        "file_name":"network_connection.py",
+        "uuid":"0000000001",
+        "label":"Network Connection",
+        "description":"Send an network connection to a host",
         "type":"action",
         "official":true
-    },
-    {
-        "file_name":"test.py",
-        "uuid":"123456789c",
-        "label":"this is the label",
-        "description":"this is the description",
-        "type":"action",
-        "official":true
-    },
-    {
-        "file_name":"sample.py",
-        "uuid":"123456789d",
-        "label":"this is the label",
-        "description":"this is the description",
-        "type":"action",
-        "official":true
-    }    
+    }
 ]
