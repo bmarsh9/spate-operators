@@ -14,5 +14,13 @@
         "description":"this is the description",
         "type":"action",
         "official":true
-    }
+    },
+    {
+        "file_name":"sample.py",
+        "uuid":"123456789d",
+        "label":"this is the label",
+        "description":"this is the description",
+        "type":"action",
+        "official":true
+    }    
 ]
