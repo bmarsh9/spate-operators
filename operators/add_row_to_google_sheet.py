@@ -21,7 +21,8 @@ def code(input, **kwargs):
     
     sheet = gc.open_by_key(spreadsheet_key)
     wks = sh.worksheet_by_title(sheet_name)
-    wks.insert_rows(row=wks.rows, number=1, values=[1,2])
+    cells = wks.get_all_values(include_tailing_empty_rows=False, include_tailing_empty=False, returnas='matrix')
+    wks.insert_rows(row=len(cells), number=1, values=[1,2])
     logging.info("added row to the spreadsheet:{}".format(sheet_name))
     
     '''Default return is True. If you want to return something else, do so above.
