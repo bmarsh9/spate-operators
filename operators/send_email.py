@@ -2,15 +2,15 @@ def code(input, **kwargs):
     '''Place your custom code below.
     Must be indented under this function.'''
 
-    gmail_user = locker(kwargs["config"],"default","002_guser") ##input:type=text:name=002_guser:label=Enter Gmail email username
-    gmail_password = locker(kwargs["config"],"default","002_gpassword") ##input:type=text:name=002_gpassword:label=Enter Gmail password
+    gmail_user = locker(kwargs["config"],"default","002_guser") ##input:type=text:name=002_guser:label=Enter Gmail email address that is sending the email (FROM)
+    gmail_password = locker(kwargs["config"],"default","002_gpassword") ##input:type=text:name=002_gpassword:label=Enter Gmail password (support.google.com/accounts/answer/185833?hl=en)
     to_address = locker(kwargs["config"],"default","002_toaddress") ##input:type=text:name=002_toaddress:label=Where should we send the email? (comma separated)
     subject = locker(kwargs["config"],"default","002_subject") ##input:type=text:name=002_subject:label=Enter the subject of the email
     body = locker(kwargs["config"],"default","002_body") ##input:type=text:name=002_body:label=Enter the body of the email
 
     sent_from = gmail_user
     if not to_address:
-        logging.error("to_address parameter is empty! Exiting...")
+        logging.error("<to_address> is empty")
         return False
     to_address = to_address.split(",")
 
