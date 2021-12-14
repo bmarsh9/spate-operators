@@ -6,6 +6,7 @@
         "description":"Send an network connection to a host",
         "type":"action",
         "enabled":true,
-        "official":true
+        "official":true,
+        "imports":"import requests"
     }
 ]
