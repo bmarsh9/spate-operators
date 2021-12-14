@@ -2,7 +2,8 @@ def code(input, **kwargs):
     '''Place your custom code below.
     Must be indented under this function.'''
     url = locker(kwargs["config"],"default","url_host") ##input:type=text:name=url_host:label=Enter the hostname for the URL connection:placeholder=Enter the host with http
-    r = request.get(url)
+    verify = locker(kwargs["config"],"default","verify") ##input:type=checkbox:name=verify:label=Verify TLS connection
+    r = requests.get(url,verify=verify)
     if r.ok:
         return r.json()
     else:
