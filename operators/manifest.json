@@ -35,7 +35,7 @@
         "label":"Append Row to GSheet",
         "description":"Append row to a google sheet",
         "type":"action",
-        "enabled":false,
+        "enabled":true,
         "official":true,
         "imports":"import pygsheets"
     }
