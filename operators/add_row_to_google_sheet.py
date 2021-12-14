@@ -20,7 +20,7 @@ def code(input, **kwargs):
     gc = pygsheets.authorize(custom_credentials=my_credentials)
     
     sheet = gc.open_by_key(spreadsheet_key)
-    wks = sh.worksheet_by_title(sheet_name)
+    wks = sheet.worksheet_by_title(sheet_name)
     cells = wks.get_all_values(include_tailing_empty_rows=False, include_tailing_empty=False, returnas='matrix')
     wks.insert_rows(row=len(cells), number=1, values=[1,2])
     logging.info("added row to the spreadsheet:{}".format(sheet_name))
