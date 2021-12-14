@@ -41,6 +41,6 @@
         "enabled":true,
         "official":true,
         "imports":"import pygsheets\nfrom google.oauth2 import service_account",
-        "documentation":""
+        "documentation":"https://pygsheets.readthedocs.io/en/latest/authorization.html"
     }
 ]
