@@ -3,7 +3,7 @@ def code(input, **kwargs):
     Must be indented under this function.'''
     # https://github.com/nithinmurali/pygsheets
     secret_dict = locker(kwargs["config"],"default","004_secretdict") ##input:type=text:name=004_secretdict:label=Oauth credentials:placeholder=e.g. {}
-    spreadsheet_key = locker(kwargs["config"],"default","004_sheetkey") ##input:type=text:name=004_sheetkey:label=Enter the key of the Google spreadsheet
+    spreadsheet_key = locker(kwargs["config"],"default","004_sheetkey") ##input:type=text:name=004_sheetkey:label=Enter the key of the Google spreadsheet - See here pygsheets.readthedocs.io/en/latest/authorization.html
     sheet_name = locker(kwargs["config"],"default","004_sheetname") ##input:type=text:name=004_sheetname:label=Enter the name of the Google sheet tab
 
     try:
