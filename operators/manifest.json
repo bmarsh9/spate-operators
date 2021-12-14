@@ -7,7 +7,8 @@
         "type":"action",
         "enabled":true,
         "official":true,
-        "imports":"import requests"
+        "imports":"import requests",
+        "documentation":""
     },
     {
         "file_name":"send_email.py",
@@ -17,7 +18,8 @@
         "type":"action",
         "enabled":true,
         "official":true,
-        "imports":"import smtplib"
+        "imports":"import smtplib",
+        "documentation":""
     },
     {
         "file_name":"send_text_message.py",
@@ -27,7 +29,8 @@
         "type":"action",
         "enabled":true,
         "official":true,
-        "imports":"from twilio.rest import Client"
+        "imports":"from twilio.rest import Client",
+        "documentation":""
     },
     {
         "file_name":"add_row_to_google_sheet.py",
@@ -37,6 +40,7 @@
         "type":"action",
         "enabled":true,
         "official":true,
-        "imports":"import pygsheets\nfrom google.oauth2 import service_account"
+        "imports":"import pygsheets\nfrom google.oauth2 import service_account",
+        "documentation":""
     }
 ]
