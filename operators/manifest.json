@@ -28,5 +28,15 @@
         "enabled":true,
         "official":true,
         "imports":"from twilio.rest import Client"
+    },
+    {
+        "file_name":"add_row_to_google_sheet.py",
+        "uuid":"0000000004",
+        "label":"Append Row to GSheet",
+        "description":"Append row to a google sheet",
+        "type":"action",
+        "enabled":false,
+        "official":true,
+        "imports":"import pygsheets"
     }
 ]
