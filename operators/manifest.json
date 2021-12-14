@@ -8,5 +8,15 @@
         "enabled":true,
         "official":true,
         "imports":"import requests"
+    },
+    {
+        "file_name":"send_email.py",
+        "uuid":"0000000002",
+        "label":"Send Email",
+        "description":"Send an email to specific addresses",
+        "type":"action",
+        "enabled":true,
+        "official":true,
+        "imports":"import smtplib"
     }
 ]
