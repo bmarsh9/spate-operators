@@ -2,20 +2,21 @@ def code(input, **kwargs):
     '''Place your custom code below.
     Must be indented under this function.'''
 
-    # Find your Account SID and Auth Token at twilio.com/console
-    # and set the environment variables. See http://twil.io/secure
-    account_sid = os.environ['TWILIO_ACCOUNT_SID']
-    auth_token = os.environ['TWILIO_AUTH_TOKEN']
+    account_sid = locker(kwargs["config"],"default","003_accountsid") ##input:type=text:name=003_accountsid:label=Enter your account SID - found at twilio.com/console
+    auth_token = locker(kwargs["config"],"default","003_authtoken") ##input:type=text:name=003_authtoken:label=Enter authentication token - found at twilio.com/console
+
+    if not account_sid or not auth_token:
+        logging.error("<account_sid> and <auth_token> is required")
+        return False
     client = Client(account_sid, auth_token)
 
     message = client.messages \
                     .create(
-                         body="Join Earth's mightiest heroes. Like Kevin Bacon.",
-                         from_='+15017122661',
-                         to='+15558675310'
+                         body=body,
+                         from_="+1{}".format(from),
+                         to="+1{}".format(to)
                      )
-
-    print(message.sid)
+    logging.info("successfully sent the text message to {}".format(to))
 
     '''Default return is True. If you want to return something else, do so above.
     If the return is False, the workflow will NOT proceed.'''
