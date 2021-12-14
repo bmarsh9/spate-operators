@@ -18,5 +18,15 @@
         "enabled":true,
         "official":true,
         "imports":"import smtplib"
+    },
+    {
+        "file_name":"send_text_message.py",
+        "uuid":"0000000003",
+        "label":"Send Text Message",
+        "description":"Send text message to a number (Twilio)",
+        "type":"action",
+        "enabled":true,
+        "official":true,
+        "imports":"from twilio.rest import Client"
     }
 ]
