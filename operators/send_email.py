@@ -21,9 +21,9 @@ def code(input, **kwargs):
         server.login(gmail_user, gmail_password)
         server.sendmail(gmail_user, to_address, message)
         server.close()
-        logging.info("Email was successfully sent to {}".format(to_address))
+        logging.info("email was successfully sent to {}".format(to_address))
     except Exception as e:
-        logging.error("Failed to send email to {}. Error:{}".format(to_address,str(e)))
+        logging.error("failed to send email to {}. Error:{}".format(to_address,str(e)))
         return False
 
     '''Default return is True. If you want to return something else, do so above.
