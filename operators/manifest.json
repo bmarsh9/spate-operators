@@ -37,6 +37,6 @@
         "type":"action",
         "enabled":true,
         "official":true,
-        "imports":"import pygsheets"
+        "imports":"import pygsheets\nfrom google.oauth2 import service_account"
     }
 ]
