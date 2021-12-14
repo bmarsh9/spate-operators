@@ -9,15 +9,16 @@ def code(input, **kwargs):
     try:
         headers = json.loads(headers) 
     except:
-        logging.warning("Invalid header format. Must be type <dict>")
+        logging.warning("invalid header format. Must be type <dict>")
         headers = {}
     
     # execute the request
     request = requests.get(url,verify=verify,headers=headers)
     if request.ok:
+        logging.info("successfully sent the network request to {}".format(url))
         return request.json()
     else:
-        logging.warning("Non 200 status code returned from {}".format(url))
+        logging.warning("non 200 status code returned from {}".format(url))
         return None
 
     '''Default return is True. If you want to return something else, do so above.
