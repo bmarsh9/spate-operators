@@ -5,6 +5,7 @@
         "label":"Network Connection",
         "description":"Send an network connection to a host",
         "type":"action",
+        "enabled":true,
         "official":true
     }
 ]
