@@ -9,3 +9,22 @@ This repo is used by `spate-ui` to periodically sync official operators into the
 + Edit the `manifest.json` file
 + The `uuid` key must be unique and varchar (length 10)
 + Sync your code from `spate-ui` under the `Operators` tab
+
+### Official operators
+Official operators are "trusted" or "vetted" pieces of code that users can leverage within Spate.
+
++ [ ] MailGun (email)
++ [x] Twilio (text message)
++ [x] Google Sheet
++ [ ] Google Drive
++ [x] Google Mail
++ [x] Network request (GET)
++ [ ] Network request (POST)
++ [ ] mailgun
++ [ ] elasticsearch
++ [ ] redis
++ [ ] mysql
++ [ ] postgresql
++ [ ] splunk
++ [ ] aws services(s3,rds)
++ [ ] salesforce
