@@ -15,6 +15,7 @@ def code(input, **kwargs):
     url_id = vt.url_id(domain_to_lookup)
     results = client.get_object("/urls/{}".format(url_id))
     
+    #see vars(results) to view all attributes
     
     '''Default return is True. If you want to return something else, do so above.
     If the return is False, the workflow will NOT proceed.'''
