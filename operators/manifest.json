@@ -42,5 +42,16 @@
         "official":true,
         "imports":"import pygsheets\nfrom google.oauth2 import service_account",
         "documentation":"https://pygsheets.readthedocs.io/en/latest/authorization.html"
+    },
+    {
+        "file_name":"vt_lookup_domain.py",
+        "uuid":"0000000005",
+        "label":"Lookup Domain in VT",
+        "description":"Lookup domain via VirusTotal",
+        "type":"action",
+        "enabled":true,
+        "official":true,
+        "imports":"import vt",
+        "documentation":"https://github.com/VirusTotal/vt-py"
     }
 ]
