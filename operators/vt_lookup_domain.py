@@ -3,7 +3,7 @@ def code(input, **kwargs):
     Must be indented under this function.'''
 
     vt_api_key = locker(kwargs["config"],"default","005_vtapikey") ##input:type=text:name=005_vtapikey:label=Set VT API key:placeholder=Input API key for VirusTotal
-    if not to_address:
+    if not vt_api_key:
         logging.error("<vt_api_key> is empty")
         return False
     
