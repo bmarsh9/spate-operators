@@ -28,4 +28,4 @@ Official operators are "trusted" or "vetted" pieces of code that users can lever
 + [ ] splunk
 + [ ] aws services(s3,rds)
 + [ ] salesforce
-+ [ ] authentication service
++ [x] authentication service
