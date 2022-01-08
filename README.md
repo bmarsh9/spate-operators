@@ -29,3 +29,10 @@ Official operators are "trusted" or "vetted" pieces of code that users can lever
 + [ ] aws services(s3,rds)
 + [ ] salesforce
 + [x] authentication service
++ [ ] shodan
++ [ ] virustotal
++ [ ] phishtank
++ [ ] urlscan
++ [ ] cloudflare
++ [ ] greynoise
++ [ ] metasploit
