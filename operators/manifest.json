@@ -53,5 +53,16 @@
         "official":true,
         "imports":"import vt",
         "documentation":"https://github.com/VirusTotal/vt-py"
+    },
+    {
+        "file_name":"lookup_url_in_phishtank.py",
+        "uuid":"0000000006",
+        "label":"Lookup URL in Phishtank",
+        "description":"Lookup URL in Phishtank",
+        "type":"action",
+        "enabled":true,
+        "official":true,
+        "imports":"import requests\nimport json\nimport base64\nimport xml.etree.ElementTree as ET",
+        "documentation":"https://phishtank.org/api_info.php"
     }
 ]
