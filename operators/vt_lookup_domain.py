@@ -16,6 +16,7 @@ def code(input, **kwargs):
     results = client.get_object("/urls/{}".format(url_id))
     
     #see vars(results) to view all attributes
+    return results.last_analysis_stats
     
     '''Default return is True. If you want to return something else, do so above.
     If the return is False, the workflow will NOT proceed.'''
