@@ -31,7 +31,7 @@ Official operators are "trusted" or "vetted" pieces of code that users can lever
 + [x] authentication service
 + [ ] shodan
 + [x] virustotal
-+ [ ] phishtank
++ [x] phishtank
 + [ ] urlscan
 + [ ] cloudflare
 + [ ] greynoise
