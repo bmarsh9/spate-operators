@@ -12,8 +12,12 @@ def code(input, **kwargs):
         pt_api_key = ""
         logging.warning("<pt_api_key> is empty. You may hit a lower rate limit.")
     headers["app_key"] = pt_api_key
+    domain_to_lookup = None # update
+    if not domain_to_lookup:
+        logging.error("<domain_to_lookup> is empty")
+        return False
     phishtank_url = "http://checkurl.phishtank.com/checkurl/"
-    new_check_bytes = URI.encode()
+    new_check_bytes = domain_to_lookup.encode()
     base64_bytes = base64.b64encode(new_check_bytes)
     base64_new_check = base64_bytes.decode('ascii')
     phishtank_url += base64_new_check
