@@ -30,7 +30,7 @@ Official operators are "trusted" or "vetted" pieces of code that users can lever
 + [ ] salesforce
 + [x] authentication service
 + [ ] shodan
-+ [ ] virustotal
++ [x] virustotal
 + [ ] phishtank
 + [ ] urlscan
 + [ ] cloudflare
