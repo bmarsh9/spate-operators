@@ -64,5 +64,16 @@
         "official":true,
         "imports":"import requests\nimport json\nimport base64\nimport xml.etree.ElementTree as ET",
         "documentation":"https://phishtank.org/api_info.php"
+    },
+    {
+        "file_name":"scan_endpoint_via_shodan.py",
+        "uuid":"0000000007",
+        "label":"Lookup IP in Shodan",
+        "description":"Lookup IP in Shodan",
+        "type":"action",
+        "enabled":true,
+        "official":true,
+        "imports":"from shodan import Shodan",
+        "documentation":"https://shodan.readthedocs.io/en/latest/tutorial.html"
     }
 ]
