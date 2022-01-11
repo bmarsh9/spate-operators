@@ -73,7 +73,7 @@
         "type":"action",
         "enabled":true,
         "official":true,
-        "imports":"from shodan import Shodan",
+        "imports":"import shodan",
         "documentation":"https://shodan.readthedocs.io/en/latest/tutorial.html"
     }
 ]
