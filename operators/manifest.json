@@ -1,79 +1,101 @@
 [
-    {
-        "file_name":"network_connection.py",
-        "uuid":"0000000001",
-        "label":"Network Connection",
-        "description":"Send network request to a host",
-        "type":"action",
-        "enabled":true,
-        "official":true,
-        "imports":"import requests",
-        "documentation":""
-    },
-    {
-        "file_name":"send_email.py",
-        "uuid":"0000000002",
-        "label":"Send Email",
-        "description":"Send email to specific addresses",
-        "type":"action",
-        "enabled":true,
-        "official":true,
-        "imports":"import smtplib",
-        "documentation":""
-    },
-    {
-        "file_name":"send_text_message.py",
-        "uuid":"0000000003",
-        "label":"Send Text Message",
-        "description":"Send text message to a number (Twilio)",
-        "type":"action",
-        "enabled":true,
-        "official":true,
-        "imports":"from twilio.rest import Client",
-        "documentation":""
-    },
-    {
-        "file_name":"add_row_to_google_sheet.py",
-        "uuid":"0000000004",
-        "label":"Append Row to GSheet",
-        "description":"Append row to a google sheet",
-        "type":"action",
-        "enabled":true,
-        "official":true,
-        "imports":"import pygsheets\nfrom google.oauth2 import service_account",
-        "documentation":"https://pygsheets.readthedocs.io/en/latest/authorization.html"
-    },
-    {
-        "file_name":"vt_lookup_domain.py",
-        "uuid":"0000000005",
-        "label":"Lookup Domain in VT",
-        "description":"Lookup domain via VirusTotal",
-        "type":"action",
-        "enabled":true,
-        "official":true,
-        "imports":"import vt",
-        "documentation":"https://github.com/VirusTotal/vt-py"
-    },
-    {
-        "file_name":"lookup_url_in_phishtank.py",
-        "uuid":"0000000006",
-        "label":"Lookup URL in Phishtank",
-        "description":"Lookup URL in Phishtank",
-        "type":"action",
-        "enabled":true,
-        "official":true,
-        "imports":"import requests\nimport json\nimport base64\nimport xml.etree.ElementTree as ET",
-        "documentation":"https://phishtank.org/api_info.php"
-    },
-    {
-        "file_name":"scan_endpoint_via_shodan.py",
-        "uuid":"0000000007",
-        "label":"Lookup IP in Shodan",
-        "description":"Lookup IP in Shodan",
-        "type":"action",
-        "enabled":true,
-        "official":true,
-        "imports":"import shodan",
-        "documentation":"https://shodan.readthedocs.io/en/latest/tutorial.html"
-    }
+  {
+    "file_name": "network_connection.py",
+    "uuid": "0000000001",
+    "label": "Network Connection",
+    "description": "Send network request to a host",
+    "type": "action",
+    "enabled": true,
+    "official": true,
+    "imports": "import requests",
+    "documentation": ""
+  },
+  {
+    "file_name": "send_email.py",
+    "uuid": "0000000002",
+    "label": "Send Email",
+    "description": "Send email to specific addresses",
+    "type": "action",
+    "enabled": true,
+    "official": true,
+    "imports": "import smtplib",
+    "documentation": ""
+  },
+  {
+    "file_name": "send_text_message.py",
+    "uuid": "0000000003",
+    "label": "Send Text Message",
+    "description": "Send text message to a number (Twilio)",
+    "type": "action",
+    "enabled": true,
+    "official": true,
+    "imports": "from twilio.rest import Client",
+    "documentation": ""
+  },
+  {
+    "file_name": "add_row_to_google_sheet.py",
+    "uuid": "0000000004",
+    "label": "Append Row to GSheet",
+    "description": "Append row to a google sheet",
+    "type": "action",
+    "enabled": true,
+    "official": true,
+    "imports": "import pygsheets\nfrom google.oauth2 import service_account",
+    "documentation": "https://pygsheets.readthedocs.io/en/latest/authorization.html"
+  },
+  {
+    "file_name": "vt_lookup_domain.py",
+    "uuid": "0000000005",
+    "label": "Lookup Domain in VT",
+    "description": "Lookup domain via VirusTotal",
+    "type": "action",
+    "enabled": true,
+    "official": true,
+    "imports": "import vt",
+    "documentation": "https://github.com/VirusTotal/vt-py"
+  },
+  {
+    "file_name": "lookup_url_in_phishtank.py",
+    "uuid": "0000000006",
+    "label": "Lookup URL in Phishtank",
+    "description": "Lookup URL in Phishtank",
+    "type": "action",
+    "enabled": true,
+    "official": true,
+    "imports": "import requests\nimport json\nimport base64\nimport xml.etree.ElementTree as ET",
+    "documentation": "https://phishtank.org/api_info.php"
+  },
+  {
+    "file_name": "scan_endpoint_via_shodan.py",
+    "uuid": "0000000007",
+    "label": "Lookup IP in Shodan",
+    "description": "Lookup IP in Shodan",
+    "type": "action",
+    "enabled": true,
+    "official": true,
+    "imports": "import shodan",
+    "documentation": "https://shodan.readthedocs.io/en/latest/tutorial.html"
+  },
+  {
+    "file_name": "mailgun.py",
+    "uuid": "0000000008",
+    "label": "send email via mailgun api",
+    "description": "send email in mailgun",
+    "type": "action",
+    "enabled": true,
+    "official": true,
+    "imports": "import requests",
+    "documentation": "https://documentation.mailgun.com/en/latest/user_manual.html#sending-via-api"
+  },
+  {
+    "file_name": "s3.py",
+    "uuid": "0000000009",
+    "label": "show all s3 buckets",
+    "description": "show all s3 buckets",
+    "type": "action",
+    "enabled": true,
+    "official": true,
+    "imports": "import boto3",
+    "documentation": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_buckets"
+  }
 ]
