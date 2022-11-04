@@ -86,5 +86,16 @@
     "official": true,
     "imports": "import requests",
     "documentation": "https://documentation.mailgun.com/en/latest/user_manual.html#sending-via-api"
+  },
+  {
+    "file_name": "s3.py",
+    "uuid": "0000000009",
+    "label": "show all s3 buckets",
+    "description": "show all s3 buckets",
+    "type": "action",
+    "enabled": true,
+    "official": true,
+    "imports": "import boto3",
+    "documentation": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_buckets"
   }
 ]
