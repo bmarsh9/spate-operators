@@ -55,3 +55,4 @@ def code(input, **kwargs):
                 "html": html,
             },
         )
+    return input

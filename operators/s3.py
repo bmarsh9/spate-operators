@@ -41,4 +41,3 @@ class code:
 if __name__ == "__main__":
     out = code(aws_access_key_id, aws_secret_access_key, aws_region)
     out.list_buckets()
-
